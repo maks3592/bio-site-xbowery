@@ -459,7 +459,7 @@ html.pc-lock,html.pc-lock body{overflow:hidden}
 }
 .pc-pal.on i{animation:bar .45s cubic-bezier(.2,.8,.2,1) var(--d) forwards}
 @keyframes bar{to{transform:none}}
-.pc-ph{display:grid;grid-template-columns:1fr;gap:20px;padding:6px 4px 0}
+.pc-ph{display:grid;grid-template-columns:1fr;gap:20px;padding:6px 4px 0;align-items:start}
 .pc-ph:not(:has(.ok)){display:none}
 .pc-fig{
   display:none;padding:6px;background:rgba(14,14,14,.8);border:1px solid var(--line-strong);
@@ -474,7 +474,7 @@ html.pc-lock,html.pc-lock body{overflow:hidden}
 .pc.done .pc-fig:nth-child(2){transition-delay:.12s}
 .pc.done .pc-fig:hover{transform:rotate(0deg) scale(1.025);box-shadow:0 26px 60px rgba(0,0,0,.75);transition-delay:0s}
 .pc-fig img{
-  display:block;width:100%;aspect-ratio:4/3;object-fit:cover;
+  display:block;width:100%;height:auto;
   filter:saturate(.75) brightness(.92) contrast(1.04);transition:filter .5s;
 }
 .pc-fig:hover img{filter:saturate(1.05) brightness(1)}
