@@ -7,14 +7,12 @@
   const body = document.getElementById("pcBody");
   const typed = document.getElementById("pcTyped");
   const caret = document.getElementById("pcCaret");
-  const logo = document.getElementById("pcLogo");
   const info = document.getElementById("pcInfo");
   const ph = document.getElementById("pcPh");
   const end = document.getElementById("pcEnd");
   const behind = Array.from(document.querySelectorAll("main,.fl.win,.scatter"));
   const calm = matchMedia("(prefers-reduced-motion:reduce)");
   const CMD = "neofetch";
-  const N = 6;
 
   const el = (tag, cls, text) => {
     const n = document.createElement(tag);
@@ -22,18 +20,6 @@
     if (text != null) n.textContent = text;
     return n;
   };
-
-  for (let p = 0; p < 4; p++){
-    const pane = el("div", "pc-pane");
-    const px = p % 2, py = p >> 1;
-    for (let i = 0; i < N * N; i++){
-      const c = el("i");
-      const x = px * N + (i % N), y = py * N + Math.floor(i / N);
-      c.style.setProperty("--d", ((x + y) * 22 + Math.random() * 60).toFixed(0) + "ms");
-      pane.appendChild(c);
-    }
-    logo.appendChild(pane);
-  }
 
   const lines = [];
   const add = n => { n.classList.add("ln"); info.appendChild(n); lines.push(n); return n; };
@@ -61,16 +47,6 @@
     row.appendChild(v);
     add(row);
   });
-
-  const pal = el("div", "pc-pal");
-  for (let i = 0; i < 8; i++){
-    const b = el("i");
-    b.style.setProperty("--g", Math.round(18 + i * (237 / 7)));
-    b.style.setProperty("--d", (i * 45) + "ms");
-    pal.appendChild(b);
-  }
-  add(el("div", "pc-gap"));
-  add(pal);
 
   PC_PHOTOS.forEach((src, i) => {
     const fig = el("figure", "pc-fig");
