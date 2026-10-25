@@ -181,6 +181,10 @@ main{
   margin-top:22px;text-align:center;font-size:10px;color:var(--dim);letter-spacing:.24em;text-transform:uppercase;
   border-top:1px solid var(--line);padding-top:16px
 }
+.visits{animation:in .6s ease both}
+.visits[hidden]{display:none}
+.visits i{display:inline-block;width:4px;height:4px;margin:0 12px;vertical-align:2px;background:var(--dim);border-radius:50%}
+.visits b{font-weight:500;color:var(--text);margin-right:.6em;font-variant-numeric:tabular-nums}
 .fl{
   position:fixed;z-index:3;
   transition:transform .5s cubic-bezier(.2,.8,.2,1);

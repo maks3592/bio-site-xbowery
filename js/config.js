@@ -62,3 +62,5 @@ const PC = [
   ["mouse", "Razer Viper V3 HyperSpeed", ["1501 eDPI"]],
   ["headset", "Razer Barracuda X (2022)"]
 ];
+
+const COUNTER_HOST = "xbowery.is-a.dev";
