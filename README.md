@@ -1,3 +1,3 @@
 Bio site about me.
 
-site: [maks3592.github.io/xbowery](https://maks3592.github.io/xbowery)
+site: [right here](https://maks3592.github.io/bio-site-xbowery)
