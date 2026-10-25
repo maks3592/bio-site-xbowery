@@ -80,6 +80,7 @@
         <div class="row"><span class="k">age</span><span class="v" id="age">17</span></div>
         <div class="row"><span class="k">city</span><span class="v">spb</span></div>
         <div class="row"><span class="k">student</span><span class="v">2nd year</span></div>
+        <button type="button" class="row pc-row" id="pcOpen" aria-haspopup="dialog"><span class="k">pc</span><span class="v">i3-12100 / 3060 Ti<i class="pc-cur"></i></span></button>
       </div>
 
       <nav class="links" id="links">
@@ -141,11 +142,28 @@
   <div class="fl R7" data-d="1.4"><figure class="ph"><div class="ph-in"></div></figure></div>
 </div>
 
+<div class="pc" id="pc" hidden>
+  <div class="pc-back" data-close></div>
+  <div class="pc-win" role="dialog" aria-modal="true" aria-labelledby="pcTitle">
+    <div class="win-bar pc-bar"><i></i><i></i><i></i><b id="pcTitle">terminal</b><button type="button" class="pc-x" data-close aria-label="Закрыть"><span></span></button></div>
+    <div class="pc-body" id="pcBody">
+      <div class="pc-cmd"><span class="pc-ps">xbowery@pc</span><span class="pc-pd">:~$</span> <span id="pcTyped"></span><i class="pc-caret" id="pcCaret"></i></div>
+      <div class="pc-out">
+        <div class="pc-logo" id="pcLogo" aria-hidden="true"></div>
+        <div class="pc-info" id="pcInfo"></div>
+        <div class="pc-ph" id="pcPh"></div>
+      </div>
+      <div class="pc-end" id="pcEnd"><span class="pc-ps">xbowery@pc</span><span class="pc-pd">:~$</span> <i class="pc-caret"></i></div>
+    </div>
+  </div>
+</div>
+
 <button class="enter" id="enter" aria-label="Войти"><span class="enter-nick">Xbowery</span><span class="enter-cta"><span id="enterText">click to enter</span><i></i></span><span class="enter-ru" id="enterRu">нажми, чтобы войти</span></button>
 
 <script src="js/config.js"></script>
 <script src="js/ui.js"></script>
 <script src="js/profile.js"></script>
+<script src="js/pc.js"></script>
 <script src="js/background.js"></script>
 <script src="js/enter.js"></script>
 <script src="js/snow.js"></script>

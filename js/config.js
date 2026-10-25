@@ -39,3 +39,26 @@ const TRACKS = [
   { title: "наше прошлое лето", artist: "vecher", src: "assets/music/07.mp3", cover: "assets/music/covers/07.jpg" },
   { title: "Девочка с каре (Piano)", artist: "МУККА", src: "assets/music/08.mp3", cover: "assets/music/covers/08.jpg" }
 ];
+
+const PC_PHOTOS = [
+  "assets/pc/case.jpg",
+  "assets/pc/setup.jpg"
+];
+
+const PC = [
+  ["os", "Windows 11 Pro"],
+  ["cpu", "Intel Core i3-12100"],
+  ["gpu", "RTX 3060 Ti", ["ASUS Dual V2 OC Edition 8GB LHR"]],
+  ["ram", "Kingston 32GB (2x16) DDR4-3200"],
+  ["board", "MSI PRO H610M-E"],
+  ["disk", "Patriot P300 512GB"],
+  ["case", "PowerCase Mistral Micro D3B ARGB V2", ["Mini-Tower | mATX | Tempered Glass", "ARGB | 3 fans (1x120 + 2x140)", "305mm GPU | 160mm CPU | 2xUSB-A"]],
+  ["psu", "650W"],
+  null,
+  ["main", "Samsung Odyssey G4 25\" FHD IPS 240Hz"],
+  ["second", "Reletech M16Pro 16\" 2.5K IPS 144Hz"],
+  null,
+  ["keyboard", "Dark Project KD98A 95%"],
+  ["mouse", "Razer Viper V3 HyperSpeed", ["1501 eDPI"]],
+  ["headset", "Razer Barracuda X (2022)"]
+];
