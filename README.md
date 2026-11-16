@@ -2,4 +2,4 @@ Bio site about me.
 
 site: [right here](https://xbowery.is-a.dev)
 
-![visits](https://abacus.jasoncameron.dev/get/xbowery.is-a.dev/views/shield?text=visits&style=flat-square&bgcolor=1a1a1a&textcolor=ececec&font=jetbrains-mono)
+![visits](https://countapi.mileshilliard.com/api/v1/get/maks3592-bio-site-xbowery-visits/shield?text=visits&style=flat&bgcolor=1a1a1a&textcolor=ececec)
